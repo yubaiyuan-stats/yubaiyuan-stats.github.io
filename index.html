@@ -7,6 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/favicon.png">
+		{%- feed_meta -%}
+                 {%- if jekyll.environment == 'production' and site.google_analytics -%}
+                 {%- include google-analytics.html -%}
+                {%- endif -%}
+		
 		<meta name="google-site-verification" content="FwoT3s-mWPH8b5tsIIjqKmIqFVwkgy1KO_0hyoW4m8o" />
 	</head>
 	<body class="is-preload">
